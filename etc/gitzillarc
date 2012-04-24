@@ -42,6 +42,14 @@
 #
 #  * bugzilla_url
 #
+#      The URL to the bugzilla deployment to write to. Note that this MUST have a
+#      slash (/) at the end, ie:	
+#          
+#          https://repo.example.com/bugzilla/
+#      
+#      NOT:
+#
+#          https://repo.example.com/bugzilla
 #
 # Optional values for /etc/gitzillarc:
 #
