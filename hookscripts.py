@@ -122,7 +122,7 @@ def make_bz_init(siteconfig, bAllowDefaultAuth):
         # get data from siteconfig
         (sSiteUser, sSitePasswd) = bz_auth_from_config(siteconfig, sRepo)
 
-    oBZ = bugz.bugzilla.Bugz(sBZUrl, user=sBZUser, password=sBZPasswd)
+    oBZ = bugz.Bugz(sBZUrl, user=sBZUser, password=sBZPasswd)
 
     def auth_error(*args):
       raise ValueError("no Bugzilla auth found!")

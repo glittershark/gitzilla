@@ -6,7 +6,7 @@ utilscripts - utility scripts for gitzilla.
 
 import os
 import sys
-import bugz.bugzilla
+import bugz
 import getpass
 
 def generate_cookiefile():
@@ -27,7 +27,7 @@ def generate_cookiefile():
   if sUsername == "":
     sUsername = sLogin
 
-  oBZ = bugz.bugzilla.Bugz(sBZUrl, user=sUsername, password=sPassword)
+  oBZ = bugz.Bugz(sBZUrl, user=sUsername, password=sPassword)
   oBZ.auth()
 
 
